@@ -1,4 +1,4 @@
-## Projeto: Anime Dex
+## Projeto: Anime Dex -- [Clique aqui para visitar](https://ntcalii.github.io/Anime_Dex/)
 
 Este é um projeto web simples que combina um slideshow de capas dos animes mais populares com uma funcionalidade de busca, permitindo aos usuários encontrar e visualizar informações detalhadas
 sobre animes e mangás através da Jikan API.
