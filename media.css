@@ -1,0 +1,53 @@
+@media only screen and (max-width: 768px) {
+    #btnBuscar{
+        width: 20%;
+    }
+    .titulo1, .titulo3{
+        font-size: 2.2rem;
+    }
+    footer h1{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+    #btnBuscar{
+        width: 50%;
+    }
+    .titulo1, .titulo3{
+        font-size: 1.6rem;
+    }
+    .titulo2, aside p{
+        font-size: 1.3rem;
+    }
+    input[type="text"]{
+        width: 90%;
+    }
+    .cabeca{
+        flex: 100%;
+    }
+    footer{
+        text-align: center;
+        margin: 0;
+    }
+    header h1{
+        font-size: 2rem;
+        margin-left: 35%;
+    }
+    header h2{
+        font-size: 2rem;
+        margin-left: 45%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 426px)  {
+    #btnBuscar{
+        width: 20%;
+    }
+    input[type="text"]{
+        width: 50%;
+    }
+    footer{
+        text-align: center;
+    }
+}

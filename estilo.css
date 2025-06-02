@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0b034bc5;
+}
+
+/*cabeçalho*/
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Anton", sans-serif;
+    color: rgb(230, 229, 255);
+    text-shadow: 3px 2px 2px black;
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(#11094bc5, #211488c5, #11094bc5);
+    border-bottom: 5px solid #07041fc5;
+}
+header h1{
+    margin-top: 10px;
+    margin-left: 44%;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+}
+header h2{
+    margin-left: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+}
+/*fim cabeçalho*/
+
+/*aside*/
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    padding-top: 2%;
+    color: rgb(217, 216, 255);
+    text-align: left;
+}
+.cabeca{
+    flex: 45%;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+.card {
+    flex: 43%;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 2%;
+    height: 450px;
+    border: solid 2px red;
+    border-radius: 20px;
+    box-shadow: 0 20px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+.slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #312a64;
+}
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slideshow img.active {
+    opacity: 1;
+}
+.titulo1{
+    font-family: "Anton", sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px 2px black;
+    transition: transform 0.3s ease;
+}
+.titulo1:hover{
+    transform: translateY(-5px);
+}
+.titulo2{
+    letter-spacing: 3.5px;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px black;
+    transition: transform 0.3s ease;
+}
+.titulo2:hover{
+    transform: translateY(-5px);
+}
+aside p{
+    margin: 0.5rem, 0, 0.5rem, 0;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+aside p:hover{
+    transform: translateY(-5px);
+}
+/*fim aside*/
+
+/*titulo da busca*/
+.titulo3{
+    display: block;
+    margin: 3% auto 0 auto;
+    color: rgb(230, 229, 255);
+    font-size: 3.5rem;
+    text-shadow: 3px 2px 2px black;
+    transition: transform 0.3s ease;
+    width: fit-content;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+}
+.titulo3:hover{
+    transform: translateY(-5px);
+}
+/*fim do titulo da busca*/
+
+/*main*/
+main{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input[type="text"]{
+    width: 40%;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    background: rgb(217, 216, 255);
+    border: solid 4px rgb(84, 23, 146);
+}
+input[type="text"]:hover{
+    transform: scale(1.1);
+}
+input[type="text"]:focus{
+    transform: scale(1.1);
+}
+#btnBuscar{
+    margin-top: 3%;
+    width: 10%;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    background: #aa9fff;
+    border: solid 4px rgb(84, 23, 146);
+    cursor: pointer;
+}
+#btnBuscar:hover{
+    transform: scale(1.1);
+}
+#btnBuscar:active{
+    background: #8777ff;
+}
+#resultados {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+}
+
+.anime-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+.anime-card:hover {
+    transform: translateY(-5px);
+}
+.anime-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.anime-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.anime-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.4em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.anime-info p {
+    margin-bottom: 5px;
+    color: black;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+.anime-info a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #aa9fff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+}
+.anime-info a:hover {
+    background-color: #8777ff;
+}
+.no-results {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+/*fim do main*/
+
+/*footer*/
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(#11094bc5, #211488c5, #11094bc5);
+    border-top: 5px solid #07041fc5;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer h1{
+    font-family: "Anton", sans-serif;
+    color: rgb(230, 229, 255);
+    text-shadow: 3px 2px 2px black;
+    font-size: 1.5rem;
+    margin: 5px;
+    letter-spacing: 10px;
+}
+footer h2{
+    font-family: "Anton", sans-serif;
+    color: rgb(230, 229, 255);
+    text-shadow: 3px 2px 2px black;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+}
+footer p, b{
+    margin: 5px;
+    color: rgb(230, 229, 255);
+}
+/*fim footer*/
